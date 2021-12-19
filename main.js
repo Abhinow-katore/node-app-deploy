@@ -13,6 +13,7 @@ import { TextureLoader } from 'three';
 
 
 
+
 const scene = new THREE.Scene(); //like container
 
 const camera = new THREE.PerspectiveCamera(75,innerWidth/innerHeight, 0.1, 1000); //camera
@@ -141,6 +142,3 @@ function moveCamera() {
 
 }
 document.body.onscroll = moveCamera
-
-
-/////////////////////////////////NEW 
