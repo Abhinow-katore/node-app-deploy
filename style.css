@@ -1,25 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: 'Poppins',sans-serif;}
+  body
+  {
+    min-height: 100vh;
+
+  }
+  header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header ul li{
+    list-style: none;
+    margin-left: 20px;
+  }
+  header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+  }
+
+  /* makes button animation */
+  header ul li a:hover ,
+  header ul li a.active
+  {
+    background: #fff;
+    color: #2b1055; 
+  }
+  section
+  {
+    position: relative;
+    
+    width: 150%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+  }
+
+
+  #text
+  {
+    position: absolute;
+    color: #fff;
+    top: 60vh;
+    left: 25%;
+    height: 0;
+    white-space: nowrap;
+    font-size: 3vw;
+    z-index: 9;
+    
+
+  }
+  h3
+  {
+    position: absolute;
+    color: #fff;
+    top: 10vh;
+    left: 0;
+    height: 0;
+    white-space: nowrap;
+    font-size: 1.5vw;
+    z-index: 9;
+    line-height: 40px;
+    
+
+  }
+
+
+  #btn
+  {
+  
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translate(100px);
+  }
+
+
+.sec
+{
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+/* main below */
+
+
 canvas{
   position: fixed;
   top: 0 ;
   left: 0;
+  
 }
 
 main {
   position: absolute;
-
-
   display: grid;
   grid-template-columns: repeat(12,1fr);
-
-
-  
-
 
 }
 section{
   grid-column: 2/8;
-}
-
-header {
-  grid-column: 2/ span 5;
+  
 }
